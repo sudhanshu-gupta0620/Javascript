@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scisssor</title>
+    <style>
+        table
+        {
+            background-color: black;
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" >.
+    <tr>
+    <td><button onclick="rock()" >Rock</button></td>
+    <td><button onclick="paper()">paper</button></td>
+    <td><button onclick="scissor()">scissor</button></td>
+    </tr>
+    </table>
+    <script>
+        
+        function rock() 
+        {
+            const random = Math.random();
+            let computerchose = ''
+            if (random >= 0 && random < 1/3) {
+                computerchose='rock';
+            }
+            else if (random >= 1/3 && random < 2/3) {
+                computerchose='paper';
+            }
+            else {
+                computerchose='scissor';
+            }
+            console.log(computerchose)
+            if (computerchose == 'rock'){
+                alert('tie')
+            }
+            else if (computerchose == 'paper'){
+                alert('computer win')
+            }
+            else{
+                alert('you win')
+            }
+        }
+        function paper() 
+        {
+            const random = Math.random();
+            let computerchose = ''
+            if (random >= 0 && random < 1/3) {
+                computerchose='rock';
+            }
+            else if (random >= 1/3 && random < 2/3) {
+                computerchose='paper';
+            }
+            else {
+                computerchose='scissor';
+            }
+            console.log(computerchose)
+            if (computerchose == 'rock'){
+                alert('you win')
+            }
+            else if (computerchose == 'paper'){
+                alert(' tie ')
+            }
+            else{
+                alert('computer win')
+            }
+        }
+        function scissor() 
+        {
+            const random = Math.random();
+            let computerchose = ''
+            if (random >= 0 && random < 1/3) {
+                computerchose='rock';
+            }
+            else if (random >= 1/3 && random < 2/3) {
+                computerchose='paper';
+            }
+            else {
+                computerchose='scissor';
+            }
+            console.log(computerchose)
+            if (computerchose == 'rock'){
+                alert('computer win')
+            }
+            else if (computerchose == 'paper'){
+                alert('you win')
+            }
+            else{
+                alert(' tie')
+            }
+        }
+    </script>
+</body>
+</html>
